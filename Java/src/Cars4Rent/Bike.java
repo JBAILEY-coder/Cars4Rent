@@ -15,17 +15,7 @@ public class Bike extends Vehicle{
         return numberOfHelmets;
     }
     public String toString(){
-        return "License Plate Number: " + licensePlateNumber +
-                "Brand: " + brand +
-                "Model: " + model +
-                "Year: " + year +
-                "Color: " + color +
-                "Engine Size: " + engineSize +
-                "Fuel Type: " + fuelType +
-                "Transmission Type: " + transmissionType +
-                "Mileage: " + mileage +
-                "Seating Capacity: " + seatingCapacity +
-                "Rental Status: " + rentalStatus +
-                "Number Of Helmets: " + numberOfHelmets + "\n";
+        return super.toString() + "Number of Helmets: " + numberOfHelmets + "\n";
+
     }
 }
