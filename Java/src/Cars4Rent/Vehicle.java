@@ -1,3 +1,13 @@
+/*
+String Module = "Object Oriented Programming";
+String Occurrence = "UE2";
+String Tutor = "Tyrone Edwards";
+Dictionary Programmers = new Hashtable();
+Programmers.put("2008135", "J'Nelle Bailey");
+Programmers.put("2005741", "Kayla Mullings");
+Programmers.put("2008217", "Janique Graham");
+Programmers.put("1800902", "Nicholas Thomas");
+*/
 package Cars4Rent;
 
 public class Vehicle {
@@ -96,15 +106,15 @@ public class Vehicle {
     }
     public String toString(){
         return "License Plate Number: " + licensePlateNumber +
-                "Brand: " + brand +
-                "Model: " + model +
-                "Year: " + year +
-                "Color: " + color +
-                "Engine Size: " + engineSize +
-                "Fuel Type: " + fuelType +
-                "Transmission Type: " + transmissionType +
-                "Mileage: " + mileage +
-                "Seating Capacity: " + seatingCapacity +
-                "Rental Status: " + rentalStatus + "\n";
+                "\nBrand: " + brand +
+                "\nModel: " + model +
+                "\nYear: " + year +
+                "\nColor: " + color +
+                "\nEngine Size: " + engineSize +
+                "\nFuel Type: " + fuelType +
+                "\nTransmission Type: " + transmissionType +
+                "\nMileage: " + mileage +
+                "\nSeating Capacity: " + seatingCapacity +
+                "\nRental Status: " + rentalStatus;
     }
 }

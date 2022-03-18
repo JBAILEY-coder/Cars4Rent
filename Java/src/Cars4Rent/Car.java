@@ -1,3 +1,13 @@
+/*
+String Module = "Object Oriented Programming";
+String Occurrence = "UE2";
+String Tutor = "Tyrone Edwards";
+Dictionary Programmers = new Hashtable();
+Programmers.put("2008135", "J'Nelle Bailey");
+Programmers.put("2005741", "Kayla Mullings");
+Programmers.put("2008217", "Janique Graham");
+Programmers.put("1800902", "Nicholas Thomas");
+*/
 package Cars4Rent;
 
 public class Car extends Vehicle{
