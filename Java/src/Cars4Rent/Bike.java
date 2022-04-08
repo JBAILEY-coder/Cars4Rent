@@ -25,7 +25,8 @@ public class Bike extends Vehicle{
         return numberOfHelmets;
     }
     public String toString(){
-        return super.toString() + "Number of Helmets: " + numberOfHelmets + "\n";
-
+        String out;
+        out = String.format("        %-10s",numberOfHelmets);
+        return super.toString() + out;
     }
 }

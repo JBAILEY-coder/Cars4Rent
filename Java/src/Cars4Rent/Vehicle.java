@@ -10,6 +10,8 @@ Programmers.put("1800902", "Nicholas Thomas");
 */
 package Cars4Rent;
 
+import java.io.PrintStream;
+
 public class Vehicle {
     protected String licensePlateNumber;
     protected String brand;
@@ -104,17 +106,35 @@ public class Vehicle {
     public String getRentalStatus(){
         return rentalStatus;
     }
-    public String toString(){
-        return "License Plate Number: " + licensePlateNumber +
-                "\nBrand: " + brand +
-                "\nModel: " + model +
-                "\nYear: " + year +
-                "\nColor: " + color +
-                "\nEngine Size: " + engineSize +
-                "\nFuel Type: " + fuelType +
-                "\nTransmission Type: " + transmissionType +
-                "\nMileage: " + mileage +
-                "\nSeating Capacity: " + seatingCapacity +
-                "\nRental Status: " + rentalStatus;
+    public void setRatePerDay(int ratePerDay){
+        this.ratePerDay = ratePerDay;
     }
+    public double getRatePerDay(){
+        return ratePerDay;
+    }
+    public String toString(){
+        String out;
+        out = String.format("%-40s  %-20s  %-20s  %-18s  %-20s  %-11s  %-21s        %-25s  %-12s       %-17s  %-15s    $%-18s",licensePlateNumber,brand,model,year,color,engineSize,fuelType,transmissionType,mileage,seatingCapacity,rentalStatus,ratePerDay);
+        //out = String.valueOf(System.out.printf("%-23s",licensePlateNumber));
+        //out = String.valueOf(System.out.printf("%-23s %-11s %-10s %-8s %-12s %-8s %-16s %-12s %-17s %-11s %-17s %-8s",licensePlateNumber,brand,model,year,color,engineSize,fuelType,transmissionType,mileage,seatingCapacity,rentalStatus,ratePerDay));
+        //System.out.println(out);
+        return out;
+
+    }
+    /*public String toString(){
+        return
+                licensePlateNumber +
+                System.out.format("%11s",brand)+
+                "\t\t\t\t\t" + brand +
+                "\t" + model +
+                "\t" + year +
+                "\t" + color +
+                "\t" + engineSize +
+                "\t\t" + fuelType +
+                "\t\t\t\t" + transmissionType +
+                "\t\t\t" + mileage +
+                "\t" + seatingCapacity +
+                "\t\t\t\t\t" + rentalStatus +
+                "\t\t\t" + ratePerDay;
+    }*/
 }
